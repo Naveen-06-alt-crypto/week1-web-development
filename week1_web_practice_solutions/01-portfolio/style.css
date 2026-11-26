@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #1f2937; line-height: 1.6; }
+.site-header { position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; padding: 16px 8%; background: #111827; color: white; }
+.logo { color: white; font-weight: bold; font-size: 1.2rem; text-decoration: none; }
+.nav-links { display: flex; gap: 24px; }
+.nav-links a { color: white; text-decoration: none; }
+.nav-links a:hover { color: #93c5fd; }
+.menu-toggle { display: none; background: none; color: white; border: 0; font-size: 1.5rem; cursor: pointer; }
+.hero { min-height: 70vh; padding: 100px 8%; background: linear-gradient(120deg, #dbeafe, #eff6ff); }
+.hero h1 { margin: 0; font-size: clamp(2.5rem, 7vw, 4.5rem); color: #1d4ed8; }
+.hero h2 { font-weight: 500; }
+.eyebrow { letter-spacing: 3px; font-weight: bold; }
+.button { display: inline-block; margin-top: 16px; padding: 11px 20px; border-radius: 6px; background: #1d4ed8; color: white; text-decoration: none; }
+.section { padding: 55px 8%; }
+.section h2 { color: #1d4ed8; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
+.card { padding: 20px; border: 1px solid #dbe3ef; border-radius: 10px; background: white; box-shadow: 0 4px 12px #0f172a0d; }
+footer { padding: 22px; text-align: center; background: #111827; color: white; }
+@media (max-width: 650px) {
+  .menu-toggle { display: block; }
+  .nav-links { display: none; position: absolute; top: 60px; left: 0; right: 0; padding: 18px 8%; flex-direction: column; background: #111827; }
+  .nav-links.open { display: flex; }
+}

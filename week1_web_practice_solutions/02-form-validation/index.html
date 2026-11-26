@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="form-card">
+    <h1>Registration Form</h1>
+    <p>Please enter your details.</p>
+    <form id="registerForm" novalidate>
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name">
+      <small class="error" id="nameError"></small>
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" placeholder="name@example.com">
+      <small class="error" id="emailError"></small>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="At least 6 characters">
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Register</button>
+      <p id="successMessage" role="status"></p>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
